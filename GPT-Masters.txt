@@ -1,0 +1,62 @@
+Editable Overleaf account: https://www.overleaf.com/5795976726njkpzhrnzycw#2b7ee9
+Github Link: https://github.com/dhl846/E-learning-online-cource
+
+Team members’ info:
+	1. Sidharath Khanna	 | C0901950	| C0901950@mylambton.ca
+	2. Dhruvin Lad		 | C0903253	| C0903253@mylambton.ca
+	3. Jagjeet Kaur Randhawa | C0903290	| C0903290@mylambton.ca
+	4. Harshil Patel	 | C0908491	| C0908491@mylambton.ca
+	5. Rohit Verma		 | C0903267	| C0903267@mylambton.ca
+
+Business Domain: E-commerce Online Courses Information System (Pythonic)
+This project will focus on developing a Pythonic information system for an e-commerce platform selling online courses.
+
+Target Users:
+
+ Course Creators: Individuals or organizations who want to sell their online courses on the platform.
+ Learners: Individuals seeking to purchase and enroll in online courses to acquire new skills or knowledge.
+
+System Functionality:
+
+Course Management:
+  Course creators can upload their course content (videos, lectures, quizzes, etc.) and manage course details like pricing, description, and curriculum.
+  The system will handle different course formats (e.g., pre-recorded videos, live sessions) and provide tools for content organization.
+E-commerce Features:
+  Learners can browse courses by category, search for specific topics, and filter based on various criteria (price, instructor, rating).
+  Secure payment processing will be integrated for purchasing courses.
+  The system will manage shopping carts, wishlists, and user accounts.
+Content Delivery:
+  Learners can access purchased courses through a user-friendly interface and stream content seamlessly.
+  The system will support progress tracking, allowing learners to resume courses where they left off and track their completion rates.
+Content Security:
+  Implement features to protect copyrighted course content, such as DRM (Digital Rights Management) or video watermarks.
+
+Data Entities:
+
+  Users: Course creators and learners with profiles and access levels.
+  Courses: Online courses with titles, descriptions, pricing, content modules, and instructor information.
+  Content: Video lectures, PDFs, quizzes, assignments, and other learning materials.
+  Transactions: Purchases of courses by learners, including payment details and enrollment information.
+  Reviews and Ratings: Learners can leave reviews and ratings for courses to help others make informed decisions (Optional).
+
+Use Cases:
+
+  Course Creator Use Cases:
+    Upload and manage course content.
+    Set pricing and enrollment options.
+    Track student progress and engagement.
+    Monitor course sales and revenue.
+  Learner Use Cases:
+    Browse and search for courses.
+    Preview course content before purchase.
+    Enroll in courses and access learning materials.
+    Complete quizzes and assignments.
+    Track their course progress and completion rates.
+    Leave reviews and ratings for courses (Optional).
+
+Benefits of a Pythonic Approach:
+
+  Readability and Maintainability: Python code known for its clarity can lead to a more maintainable system for future development.
+  Large Ecosystem of Libraries: Python offers a vast array of libraries for web development, data analysis (if integrated with user behavior analysis), and e-commerce functionalities.
+  Rapid Prototyping: Python's simplicity allows for faster development cycles, enabling efficient testing and iteration.
+
