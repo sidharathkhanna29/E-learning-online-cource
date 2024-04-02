@@ -2,94 +2,102 @@
 <!-- @Author: Sidharath Khanna, Dhruvin Lad, Jagjeet Kaur Randhawa, Harshil Patel, Rohit Verma -->
 <!-- @Date: 30/03/2024 -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the page  -->
-    <title>Pythonic E-Learning Courses</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            align-items: center;
-
-            background-color: #101820;
-            background-size:cover;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-        }
-
-        h2{
-                text-align: center;
-                color: black;
-            }
-
-        main  {
-                background-color: #FEE715;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the page  -->
+        <title>Pythonic E-Learning Courses</title>
+        <!-- Styling the page -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 600px;
+                margin: 0 auto;
                 padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-        form {
-                display: block;
-                flex-direction: column;
                 align-items: center;
-                margin-bottom: 05%;
-                padding: 05%;
 
-                background-color: #fff;
+                background-color: #101820;
+                background-size:cover;
             }
-        #title, #description {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                box-sizing: border-box;
+
+            h1 {
+                text-align: center;
+                color: white;
             }
-        
-        button {
-                padding: 5px 10px;
-                margin: 10px 200px;
-                font-size: 16px;
-                cursor: pointer;
-                width:fit-content;
-                background-color: #4CAF50;
-                color: #fff;
-                border: none;
-                border-radius: 5px;
-            }
-    </style>
-</head>
-<body>
-    <header>
-        <h1> Gpt Master's Python Project </h1>
-    </header>
-    <main>
-        <h2>Pythonic E-Learning Courses</h1>
-        <ul>
-            {% for course in courses %}
-                <li>{{ course.title }} - {{ course.description }} <br>
-                    <a href="{{ url_for('edit_course', course_id=course.id) }}">Edit</a> 
-                    <a href="{{ url_for('delete_course', course_id=course.id) }}">Delete</a>
-                </li>
-            {% endfor %}
-        </ul>
-        <h2>Add New Course</h2>
-        <form action="{{ url_for('add_course') }}" method="post">
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required><br>
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea><br>
-            <button id="submit" type="submit">Add Course</button>
-        </form>
-    </main>
-</body>
+
+            h2{
+                    text-align: center;
+                    color: black;
+                }
+
+            main  {
+                    background-color: #FEE715;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+            form {
+                    display: block;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 05%;
+                    padding: 05%;
+
+                    background-color: #fff;
+                }
+            #title, #description {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+            
+            button {
+                    padding: 5px 10px;
+                    margin: 10px 200px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    width:fit-content;
+                    background-color: #4CAF50;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                }
+        </style>
+    </head>
+    <!-- Body -->
+    <body>
+        <!-- Header -->
+        <header>
+            <h1> Gpt Master's Python Project </h1>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <!-- Read Operation -->
+            <h2>Pythonic E-Learning Courses</h1>
+            <ul>
+                {% for course in courses %}
+                    <li>{{ course.title }} - {{ course.description }} <br>
+                        <!-- Update Operation -->
+                        <a href="{{ url_for('edit_course', course_id=course.id) }}">Edit</a> 
+                        <!-- Delete Operation -->
+                        <a href="{{ url_for('delete_course', course_id=course.id) }}">Delete</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <!-- Add Operation -->
+            <h2>Add New Course</h2>
+            <!-- Form to add a new course -->
+            <form action="{{ url_for('add_course') }}" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea><br>
+                <button id="submit" type="submit">Add Course</button>
+            </form>
+        </main>
+    </body>
 </html>

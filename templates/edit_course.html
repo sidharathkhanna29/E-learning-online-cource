@@ -3,9 +3,13 @@
 <!-- @Date: 30/03/2024 -->
 
 <html lang="en">
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the page  -->
         <title>Edit Course</title>
+        <!-- Styling the  page -->
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -66,11 +70,15 @@
                 }
         </style>
     </head>
+    <!-- Body  -->
     <body>
+        <!-- Header -->
         <header>
             <h1>Edit Course</h1>
         </header>
+        <!-- Main -->
         <main>
+            <!-- Form to edit the title or description of the course -->
             <form action="{{ url_for('edit_course', course_id=course.id) }}" method="post">
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" value="{{ course.title }}" required><br>
